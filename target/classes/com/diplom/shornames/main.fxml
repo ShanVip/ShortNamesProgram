@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #808080;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.diplom.shornames.controllers.Controller">
+   <children>
+      <Label alignment="CENTER" prefHeight="70.0" prefWidth="600.0" style="-fx-background-color: #333;" text="Сокращение ссылок" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Calibri" size="39.0" />
+         </font>
+      </Label>
+      <TextField fx:id="inputString_first" alignment="CENTER_RIGHT" layoutX="24.0" layoutY="124.0" prefHeight="36.0" prefWidth="247.0" promptText="Полная ссылка" style="-fx-background-radius: 15; -fx-border-radius: 15; -fx-border-color: #333;">
+         <font>
+            <Font name="Corbel" size="16.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="inputString_second" alignment="CENTER_RIGHT" layoutX="24.0" layoutY="186.0" prefHeight="36.0" prefWidth="247.0" promptText="Сокращенная ссылка" style="-fx-background-radius: 15; -fx-border-radius: 15; -fx-border-color: #333;">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </TextField>
+      <Button fx:id="addText" layoutX="156.0" layoutY="260.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="107.0" style="-fx-background-color: #898989; -fx-background-radius: 15; -fx-border-radius: 15;" stylesheets="@styles/style.css" text="Добавить">
+         <font>
+            <Font name="Calibri" size="15.0" />
+         </font>
+         <styleClass>
+            <String fx:value="btnActive" />
+            <String fx:value="btnPressed" />
+         </styleClass>
+      </Button>
+      <ScrollPane layoutX="306.0" layoutY="70.0" prefHeight="330.0" prefWidth="295.0" style="-fx-background-color: #808080;">
+         <content>
+            <Label fx:id="strSaveResult" alignment="TOP_LEFT" ellipsisString="" maxWidth="313.0" prefWidth="269.0" style="-fx-max-width: 300; -fx-background-color: #8080; -fx-wrap-text: true;">
+               <font>
+                  <Font name="Arial" size="18.0" />
+               </font>
+            </Label>
+         </content>
+      </ScrollPane>
+      <Label fx:id="totalMessage" alignment="CENTER_RIGHT" layoutX="47.0" layoutY="227.0" prefHeight="25.0" prefWidth="218.0" textFill="#d71111">
+         <font>
+            <Font name="Calibri" size="15.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
